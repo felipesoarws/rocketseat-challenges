@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="images/favicon.ico">
+    <title>Login Form CSS</title>
+</head>
+
+<body>
+    <div class="l-side">
+        <div class="login-side">
+            <header>
+                <div class="logo"><img src="images/logo.svg" alt=""></div>
+                <div class="login">
+                    <div class="signIn">
+                        <img src="images/log-in.svg" alt="">
+                        <h1>Faça seu login</h1>
+                    </div>
+                    <p>
+                        Entre com suas informações de cadastro.
+                    </p>
+                </div>
+            </header>
+            <main>
+                <form action="#">
+                    <div class="email input">
+                        <label>E-mail</label>
+                        <input type="email" placeholder="Digite seu e-mail" id="email" autocomplete="off">
+                        <img src="images/mail.svg" alt="" class="checked mail">
+                        <img src="images/mail-focus.svg" alt="" class="unchecked mail">
+                    </div>
+
+                    <div class="password input">
+                        <label>Senha</label>
+                        <input type="password" placeholder="Digite sua senha" id="password">
+                        <img src="images/lock.svg" alt="" class="checked lock">
+                        <img src="images/lock-focus.svg" alt="" class="unchecked lock">
+                        <img src="images/eye.svg" alt="" class="eye">
+                    </div>
+                    <div class="remember-me">
+                        <label name="remember">
+                            <input type="checkbox" name="remember">
+                            Lembre-me
+                        </label>
+                        <a href="#">
+                            Esqueci minha senha
+                        </a>
+                    </div>
+                    <div class="submit">
+                        <button type="submit">
+                            Entrar
+                        </button>
+                        <p>Não tem uma conta? <a href="#">Registre-se</a></p>
+                    </div>
+                </form>
+            </main>
+        </div>
+    </div>
+    <div class="r-side">
+        <img src="images/side-image.jpg" alt="">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

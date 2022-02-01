@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style-type: none;
+  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  background-color: #191816;
+  position: relative;
+}
+
+body .r-side {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    min-height: 100vh;
+  }
+  body .login-side {
+    background-color: #24221f;
+    padding: 2rem;
+    width: 35vw;
+  }
+  body .r-side {
+    overflow: hidden;
+    display: block;
+    width: 50vw;
+  }
+  body .r-side img {
+    height: 100vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+body .l-side {
+  margin: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  body .l-side {
+    margin: 2rem 10rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body .l-side {
+    width: 50vw;
+    margin: 4rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+body .l-side header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  body .l-side header .logo {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+  }
+}
+
+body .l-side header .login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+}
+
+body .l-side header .login .signIn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 0.5rem;
+}
+
+body .l-side header .login .signIn h1 {
+  font-size: 1.2rem;
+  color: #d4ccb6;
+}
+
+body .l-side header .login .signIn img {
+  width: 1.7rem;
+}
+
+body .l-side header .login p {
+  color: #afb6c2;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+}
+
+body .l-side main div {
+  margin: 1.5rem 0;
+}
+
+body .l-side main label {
+  display: block;
+  color: #afb6c2;
+  margin: 0.1rem 0;
+}
+
+body .l-side main input {
+  width: 100%;
+  padding: 0.5rem 0.5rem 0.5rem 2rem;
+  background-color: transparent;
+  border: 1px solid #868686;
+  border-radius: 0.2rem;
+  outline: 0;
+  color: #afb6c2;
+}
+
+body .l-side main input::-webkit-input-placeholder {
+  font-family: "Roboto", sans-serif;
+}
+
+body .l-side main input:-ms-input-placeholder {
+  font-family: "Roboto", sans-serif;
+}
+
+body .l-side main input::-ms-input-placeholder {
+  font-family: "Roboto", sans-serif;
+}
+
+body .l-side main input::placeholder {
+  font-family: "Roboto", sans-serif;
+}
+
+body .l-side main input:focus {
+  border: 1px solid transparent;
+  -webkit-box-shadow: 0 0 1px 1px #ffc632;
+          box-shadow: 0 0 1px 1px #ffc632;
+}
+
+body .l-side main .input {
+  position: relative;
+}
+
+body .l-side main .input input:focus ~ img.checked {
+  opacity: 0;
+}
+
+body .l-side main .input input:focus ~ img.unchecked {
+  opacity: 1;
+}
+
+body .l-side main .input img {
+  position: absolute;
+  width: 1.2rem;
+}
+
+body .l-side main .input img.checked {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+body .l-side main .input img.unchecked {
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+body .l-side main .input img.lock, body .l-side main .input img.mail {
+  left: 0.5rem;
+  bottom: 0.7rem;
+}
+
+body .l-side main .input img.eye {
+  right: 0.5rem;
+  bottom: 0.7rem;
+  cursor: pointer;
+}
+
+body .l-side main .remember-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .l-side main .remember-me label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 0.8rem;
+  border: 0;
+  outline: 0;
+}
+
+body .l-side main .remember-me label input {
+  width: 1.5rem;
+  outline: 0;
+  accent-color: #ffc632;
+  border: 1px solid #868686;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+body .l-side main .remember-me a {
+  color: #ffc632;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+body .l-side main .submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+}
+
+body .l-side main .submit button {
+  width: 100%;
+  padding: 0.6rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  background-color: #ffc632;
+  border: 0;
+  border-radius: 0.2rem;
+  color: #24221f;
+  font-weight: bold;
+}
+
+body .l-side main .submit p {
+  color: #ffc632;
+  font-size: 0.8rem;
+  font-family: "Roboto", sans-serif;
+}
+
+body .l-side main .submit p a {
+  color: #ffc632;
+  text-decoration: none;
+  font-weight: 600;
+}
+/*# sourceMappingURL=main.css.map */
